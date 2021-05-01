@@ -1,0 +1,16 @@
+#:import platform kivy.utils.platform
+<Chooser>:
+    cols:1
+    rows:1
+    id:chooser
+    FileChooserIconView:
+        id:filechooser
+        on_selection:chooser.selected(filechooser.selection)
+        rootpath: '/storage/emulated/0/' if platform == 'android' else '/'
+    Widget:
+        Scatter:
+            id:scatter
+            size:image.size
+            Image:
+                id:image
+                source:

@@ -1,0 +1,32 @@
+[app]
+title = Gallery
+package.name = Gallery
+package.domain = Elisha.myapp.Gallery.com
+source.dir = .
+source.include_exts = py,kv
+version = 0.1
+requirements = python3,kivy
+#icon.filename = %(source.dir)s/icon.png #
+orientation = all
+fullscreen = 1
+android.presplash_color = black
+android.permissions = READ_EXTERNAL_STORAGE
+android.api = 26
+android.minapi = 21
+android.private_storage = True
+android.skip_update = False
+android.accept_sdk_license = True
+android.entrypoint = org.renpy.android.PythonActivity
+android.apptheme = "@android:style/Theme.NoTitleBar"
+android.manifest.launch_mode = standard
+android.wakelock = False
+android.arch = armeabi-v7a
+android.numeric_version = 1
+p4a.fork = kivy
+p4a.branch = master
+p4a.bootstrap = sdl2
+[buildozer]
+log_level = 2
+warn_on_root = 1
+build_dir = ./.buildozer
+bin_dir = ./bin
