@@ -2,7 +2,21 @@
 
 A simple gallery for android
 
-## Install requirements
+## Install requirements (run)
+
+```sh
+sudo apt update
+sudo apt install -y python3-pip
+pip3 install kivy
+```
+
+## Run
+
+```sh
+python3 main.py
+```
+
+## Install requirements (build)
 
 ```sh
 sudo apt update
