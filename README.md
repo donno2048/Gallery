@@ -2,6 +2,13 @@
 
 A simple gallery for android
 
+## Clone the repo
+
+```sh
+git clone https://github.com/donno2048/Gallery
+cd Gallery
+```
+
 ## Install requirements (run)
 
 ```sh
